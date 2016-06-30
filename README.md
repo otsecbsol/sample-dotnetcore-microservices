@@ -8,6 +8,10 @@ A tiny sample microservices written in .NET Core.
 
 ## Build & Publish
 ```
+dotnet restore src/web
+dotnet restore src/service1
+dotnet restore src/service2
+
 dotnet publish src/web
 dotnet publish src/service1
 dotnet publish src/service2
