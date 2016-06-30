@@ -1,0 +1,21 @@
+web:
+    build: src/web
+    container_name: web
+    ports:
+        - '5000:5000'
+    links:
+        - service1
+        - service2
+
+service1:
+    build: src/service1
+    container_name: service1
+    expose:
+        - "5000"
+
+service2:
+    build: src/service2
+    container_name: service2
+    expose:
+        - "5000"
+
